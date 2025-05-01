@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Web Design Index</title>
+		<style>
+		div#nav ul{
+			margin:0;
+			padding:0;
+		}
+		div#nav ul li {
+			float:left;
+			list-style: none;
+		}
+		div#nav ul li a{
+			padding: 7px 15px;
+			display: block;
+			text-decoration:none;
+			color:white;
+			background-color:red;
+			border-right: 2px solid grey;
+		}
+		div#nav ul ul{
+			position:absolute;
+			left: -999em;
+		}
+		div#nav ul li:hover ul{
+			left:auto;
+		}
+		div#nav ul li a:hover, div#nav ul li:hover a{
+			background-color: DimGrey;
+		}
+		div#nav ul li ul li{
+			float:none;
+		}
+		div#nav ul li.last a{
+			border-right:none;
+		}
+		div#nav ul li.current a{
+			background-color:darkred;
+		}
+		div#nav ul li ul li a{
+			border-right:none;
+		}
+		div#nav ul li:hover ul li a{
+			background-color:#ebebeb;
+		}
+		div#nav li:hover ul li a:hover{
+			background-color:DimGrey;
+		}
+		img{
+			float:right;
+			width:43%;
+			height:43%;
+			padding-bottom: 10px;
+		}
+		video{
+			float: right;
+			position: absolute;
+			left: 925px;
+			top: 400px;
+		}
+		p{
+			font-size: 18px;
+		}
+		</style>
+	</head>
+	
+	<body>
+	<div id="nav">
+		<ul class="clearfix">
+			<li>
+				<a href="VexSiteHompage.html">Home</a>
+			</li>
+			<li class="current">
+				<a href="VexSiteSpinUp.html">2022-2023: Spin Up</a>
+			</li>
+			<li>
+				<a href="VexSiteOverUnder.html">2023-2024: Over Under</a>
+			</li>
+			<li class="last">
+				<a href="VexSiteHighStakes.html">2024-2025: High Stakes</a>
+			</li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	</div>
+	<div id="description">
+		<img src="Images/SpinUp.jpeg" alt="Field Setup">
+		<video width="300" height="200" controls>
+		<source src="Images/SpinUpVideo.mp4" type="video/mp4">
+		</video>
+		<p>There are sixty (60) Discs and four (4) Rollers on a Spin Up Field. Discs can be Scored in the two High Goals, one per Alliance, at opposite corners of the field.  Each Disc scored in a High Goal is worth 5 points. However, Robots aiming for the High Goal had better be accurate!  Because underneath each High Goal, is a 1-point Low Goal for the opposing Alliance.</p>
+		<br>
+		<p>In addition to Discs, Robots can also spin the four Rollers mounted to the field perimeter.  If the area inside of a Roller’s pointers only shows one color, that is considered “Owned” by that Alliance.  Each Owned Roller is worth 10 points.</p>
+		<br>
+		<p>As the clock winds down, it’s time for the Endgame. At the end of the Match, Alliances will receive a 3 point bonus for each tile their Robots are Covering. So, during the last 10 seconds of the Match, there are no horizontal expansion limits.</p>
+		<br>
+		<p style="padding-right:585px">The Alliance that scores more points in the Autonomous period is awarded with ten (10) bonus points, added to the final score at the end of the match. Each Alliance also has the opportunity to earn an Autonomous Win Point by scoring at least two Discs in Alliance’s High Goals, and owning Both Rollers on their side of the field. This Bonus can be earned by both Alliances, regardless of who wins the Autonomous Bonus.</p>
+		
+	</div>
+	
+	
+	</body>
+		
+</html>

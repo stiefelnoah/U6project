@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Web Design Index</title>
+		<style>
+		div#nav ul{
+			margin:0;
+			padding:0;
+		}
+		div#nav ul li {
+			float:left;
+			list-style: none;
+		}
+		div#nav ul li a{
+			padding: 7px 15px;
+			display: block;
+			text-decoration:none;
+			color:white;
+			background-color:red;
+			border-right: 2px solid grey;
+		}
+		div#nav ul ul{
+			position:absolute;
+			left: -999em;
+		}
+		div#nav ul li:hover ul{
+			left:auto;
+		}
+		div#nav ul li a:hover, div#nav ul li:hover a{
+			background-color: DimGrey;
+		}
+		div#nav ul li ul li{
+			float:none;
+		}
+		div#nav ul li.last a{
+			border-right:none;
+		}
+		div#nav ul li.current a{
+			background-color:darkred;
+		}
+		div#nav ul li ul li a{
+			border-right:none;
+		}
+		div#nav ul li:hover ul li a{
+			background-color:#ebebeb;
+		}
+		div#nav li:hover ul li a:hover{
+			background-color:DimGrey;
+		}
+		img{
+			float:right;
+			width:50%;
+			height:50%;
+			padding-bottom: 10px;
+		}
+		video{
+			float: right;
+			position: absolute;
+			left: 875px;
+			top: 400px;
+		}
+		p{
+			font-size: 18px;
+			column-width:500px;
+		}
+		</style>
+	</head>
+	
+	<body>
+	<div id="nav">
+		<ul class="clearfix">
+			<li>
+				<a href="VexSiteHompage.html">Home</a>
+			</li>
+			<li>
+				<a href="VexSiteSpinUp.html">2022-2023: Spin Up</a>
+			</li>
+			<li class="current">
+				<a href="VexSiteOverUnder.html">2023-2024: Over Under</a>
+			</li>
+			<li class="last">
+				<a href="VexSiteHighStakes.html">2024-2025: High Stakes</a>
+			</li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<div id="description">
+		<img src="Images/OverUnder.png" alt="Field Setup">
+		<video width="300" height="200" controls>
+		<source src="Images/OverUnderVideo.mp4" type="video/mp4">
+		</video>
+		<p>There are sixty (60) Triballs, two (2) Goals, and two (2) sets of Elevation Bars on an Over Under game field, which is divided by a Barrier. Triballs can be scored in the Goals and in Offensive Zones of the field. Each Triball scored in a Goal is worth 5 points. Each Triball scored in an Offensive Zone is worth 2 points. Robots can traverse the field however they choose, whether that's driving over the dividing Barrier or under either set of Elevation Bars. Triballs can only be removed from an opponent's goal if their two alliance Robots are on the same side of the Barrier, or "Double Zoned."</p>
+		<br>
+		<p>As the match clock winds down, Robots will try to outclimb their opponents to reach higher Elevation Tiers. At the end of the Match, the Robot that has climbed the highest will receive 20 points; the second-highest Robot receives 15 points; third gets 10; and fourth gets 5. Any Robots that share an Elevation Tier are awarded the same number of points based on their comparative height to the other Robots in the Match.</p>
+		<br>
+		<p style="padding-right:585px">The Alliance that scores more points in the Autonomous period is awarded with eight (8) bonus points, added to the final score at the end of the match. Each Alliance also has the opportunity to earn an Autonomous Win Point by removing the Triball from their Alliance's Match Load Zone, scoring at least one Alliance Triball in their own Goal, and ending the Autonomous Period with at least one Robot contacting their own Elevation Bar. The Autonomous Win Point can be earned by both Alliances, regardless of who wins the Autonomous Bonus.</p>		
+	</div>
+	
+	</body>
+		
+</html>
